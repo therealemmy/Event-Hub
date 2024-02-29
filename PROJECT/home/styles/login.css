@@ -1,0 +1,179 @@
+* {
+  left: 0;
+  right: 0;
+  padding: 0;
+  list-style: none;
+  color: #000;
+  margin: 0;
+  font-weight: 300;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Syne";
+  transition: 0.5s;
+}
+.fresh {
+  display: flex;
+  height: 100vh;
+}
+.sm {
+  font-size: 14px;
+  margin-top: 0.5rem;
+  color: #404040;
+}
+.fresh1 h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.fresh1 h1:hover {
+  margin-left: 10rem;
+}
+.fresh1 h2 {
+  font-weight: 600;
+  color: #474747;
+}
+
+.fresh1 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  width: 960px;
+  margin-left: 11rem;
+}
+
+.fresh1 input {
+  padding: 0.9rem;
+  width: 270px;
+  border: 1px solid #ababab;
+  border-radius: 0.5rem;
+}
+
+.fresh1 input:hover {
+  border: 1px solid #404040;
+}
+
+.loginbtn {
+  background-color: #909090;
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem;
+  width: 270px;
+  border-radius: 0.5rem;
+  font-size: 13px;
+}
+
+.loginbtn:hover {
+  background-color: #474747;
+}
+.lit {
+  color: #474747;
+}
+
+
+#message {
+  color: rgb(3, 179, 3);
+  font-size: small;
+}
+#error {
+  color: red;
+  font-size: small;
+}
+.fresh2 {
+  width: 960px;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../images/So-What-1120x800.jpeg);
+}
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #474747;
+  display: inline-block;
+}
+.ftlg {
+  color: #fff;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.qlinks label {
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 14px;
+}
+.container label {
+  color: #fff;
+  margin-left: 2rem;
+}
+.qlinks h1 {
+  color: #fff;
+  font-size: 19px;
+}
+.qlinks ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+.col1 {
+  margin-left: 2rem;
+}
+.col4 i {
+  color: #474747;
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  padding: 2px;
+}
+.qlinks {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 9rem;
+}
+.msg {
+  color: #fff;
+  font-size: 12px;
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+
+.form {
+  line-height: 3.2rem;
+}
+
+@media (width: 1280px) {
+  .fresh2 {
+    display: none;
+  }
+  .footer {
+    width: 100%;
+  }
+  .fresh1 {
+    margin-left: 2rem;
+  }
+}
+@media (width: 720px) {
+  body {
+    height: 100%;
+  }
+
+  .header {
+    margin-top: 2rem;
+  }
+
+  .footer {
+    height: 100%;
+    position: inherit;
+    margin-left: 5rem;
+  }
+
+  .qlinks {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .col2,
+  .col3,
+  .col4 {
+    margin-left: 2rem;
+  }
+}

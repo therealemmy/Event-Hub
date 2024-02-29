@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Creation</title>
+    <link rel="stylesheet" href="../styles/creation.css">
+
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon" class="favicon">
+    <!-- linktogooglefontsubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Gurajada&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Gurajada&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Syne:wght@400;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- linktocss -->
+    <link rel="stylesheet" href="../styles/dashbaord.css" />
+
+    <!-- linktoboxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="toplinks">
+        <a href="options.html"><i class='bx bx-left-arrow-alt'></i></a>
+
+        <a href="options.html"><i class='bx bx-x'></i></a>
+    </div>
+
+
+    <div class="heading">
+        <h2>New Event</h2>
+        <p>Great! Tell us a little about your event</p>
+    </div>
+    <div class="body">
+        <div class="create">
+
+            <form action="success.html" method="post">
+                <h1> <i class='bx bxs-data'></i> Basic Information</h1>
+                <div class="form1">
+                    <p>*Event Title</p>
+                    <input type="text" required name="event-title" class="event__title" placeholder="*Event Title"
+                        required>
+                    <br> <br>
+                    <select name="event-categories" id="event-categories">
+                        <option value="">*Event Catgory</option>
+                        <option value="conference">Conference</option>
+                        <option value="meeting">Meeting</option>
+                        <option value="seminar">Seminar</option>
+                        <option value="training-session">Training-Session</option>
+                        <option value="conference">Trade show</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="political event">Political event</option>
+                        <option value="fund raiser">Fund raiser/Benefit</option>
+                        <option value="Celebration">Celebration</option>
+                        <option value="reunion">Reunion</option>
+                        <option value="sports event">Sports event</option>
+                        <option value="webinar">Other</option>
+                    </select>
+                    <select name="language" id="language">
+                        <option value="English">English</option>
+                    </select>
+                    <select name="country" id="country">
+                        <option value="Nigeria">Nigeria</option>
+                    </select>
+                    <br> <br>
+                    <input type="text" name="firstname" id="firstname" placeholder="*First Name" required>
+                    <input type="text" name="lastname" id="lastname" placeholder="*Last Name" required>
+
+                    <select name="email" id="email">
+                        <option value="planer email">Planner Email</option>
+                        <option value="planer email">example@gmail.com</option>
+                    </select>
+                </div>
+                <div class="form2">
+                    <h1> <i class='bx bxs-edit-location'></i> Location</h1> <br> <br>
+                    <select name="format" id="format">
+                        <option value="format">*Event format</option>
+                        <option value="In person">In person</option>
+                        <option value="virtual">Virtual</option>
+                    </select>
+
+                    <input type="text" name="venue" id="venue" placeholder="*Event venue/address" required>
+                </div>
+                <div class="form3">
+                    <h1> <i class='bx bxs-calendar-star'></i> Event Dates</h1> <br> <br>
+                    <div class="dates">
+                        <p>*Date</p>
+                        <input type="date" name="startdate" id="startdate">
+                        <p>*Time</p>
+                        <input type="time" name="starttime" id="starttime">
+                        <!--     -->
+                        <!-- <input type="date" name="enddate" id="enddate">
+                        <p>*End time</p>
+                        <input type="time" name="endtime" id="endtime"> -->
+                    </div>
+                </div>
+           
+                <button type="submit" name="create-event" id="create-event" class="create-event">Create</button>
+                <div id="error"></div>
+                <div id="message"></div>
+            </form>
+        </div>
+
+        <div class="right">
+            <img src="../images/40a546adc03244abe0e57e99094b1933-removebg-preview.png" alt="hello_unnamed">
+            <br><br>
+            <p>This is just the start, we can't wait to see what kind of event you put on!</p>
+        </div>
+
+    </div>
+
+    <script src="../scrvent.js"></script>
+</body>
+
+</html>
